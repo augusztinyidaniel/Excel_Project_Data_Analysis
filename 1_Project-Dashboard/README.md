@@ -18,9 +18,9 @@ Also, a simplified version (without the map chart) can be accessed and even trie
 
 The creation of this dashboard required the following skills in Excel:
 
+- Charts
 - Formulas and Functions
 - Data Validation
-- Charts
 
 ## Data Jobs Dataset
 
@@ -55,7 +55,9 @@ The map chart feature has been chosen to plot median salaries globally. The colo
 
 ### Formulas and Functions
 
-Note: in my analysis I used the Hungarian version of Excel with translated function names in order for me to get familiar with both the English version (from the course video) and the Hungarian version (in practice) of the functions used.
+Note: in my analysis I used the Hungarian version of Excel in order for me to get familiar with both the English version (from the course video) and the Hungarian version (in practice) of the functions used.
+
+The functions showcased here are taken from my project in their original form, but in the details I provide the English version of all the functions used.
 
 #### Median Salary by Job Titles
 
@@ -70,12 +72,62 @@ Note: in my analysis I used the Hungarian version of Excel with translated funct
   )
 )
 ```
-
+| Hungarian        | English      |
+|------------------|--------------|
+| `MEDIÁN()`       | `MEDIAN()`   |
+| `SZÁM()`         | `ISNUMBER()` |
+| `SZÖVEG.KERES()` | `SEARCH()`   |
 
 - **Multi-Criteria Filtering**: Checks job title, country, schedule type, and excludes blank salaries.
 
-- **Array Formula**: Utilizes `MEDIAN()` function (in the Hungarian version of Excel it's `MEDIÁN()`) with nested `IF()` function (in the Hungarian version of Excel it's `HA()`) to analyze an array.
+- **Array Formula**: Utilizes `MEDIAN()` function with nested `IF()` function to analyze an array.
 
-- Tailored Insights: Provides specific salary information for job titles, regions, and schedule types.
+- **Tailored Insights**: Provides specific salary information for job titles, regions, and schedule types.
 
-- Formula Purpose: This formula populates the table below, returning the median salary based on job title, country, and type specified.
+- **Formula Purpose**: This formula populates the table below, returning the median salary based on job title, country, and type specified.
+
+**Background table**
+
+![The table that works behind the horizontal bar chart of median salary by titles and the Median Salary KPI card](..\0_Resources\Images\title_background_table.png)
+
+**Dashboard Implementation**
+
+![The horizontal bar chart of median salary by titles and the Median Salary KPI card](..\0_Resources\Images\title_dashboard.png)
+
+#### Count of Job Schedule Type
+
+```
+=SZŰRŐ(J2#;NEM(SZÁM(SZÖVEG.KERES("and";J2#)))*(J2#<>0))
+```
+| Hungarian        | English      |
+|------------------|--------------|
+| `SZŰRŐ()`        | `FILTER()`   |
+| `NEM()`          | `NOT()`      |
+| `SZÁM()`         | `ISNUMBER()` |
+| `SZÖVEG.KERES()` | `SEARCH()`   |
+
+- **Unique List Generation**: This Excel formula employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
+
+- **Formula Purpose**: This formula populates the table below, which gives us a list of unique job schedule types.
+
+**Background table**
+
+![The table that works behind the horizontal bar chart of median salary by schedule types and the Job Count KPI card](..\0_Resources\Images\type_background_table.png)
+
+**Dashboard Implementation**
+
+![The horizontal bar chart of median salary by schedule types and the Job Count KPI card](..\0_Resources\Images\type_dashboard.png)
+
+### Data Validation
+
+#### Filtered List
+
+- Enhanced Data Validation: Implementing the filtered list as a data validation rule under the Job Title, Country, and Type option in the Data tab ensures:
+
+  - User input is restricted to predefined, validated schedule types
+  - Incorrect or inconsistent entries are prevented
+  - Overall usability of the dashboard is enhanced
+
+## Conclusion
+
+I created this dashboard to showcase my skills in the use of Excel as a tool for data analysis and to take a look into salary trends across various data-related job titles and to understand how location and job type influence salaries. Utilizing data from the Excel for Data Analytics course, this dashboard may assist its users to make more informed decisions about their career paths.
