@@ -1,12 +1,12 @@
 # Excel Salary Dashboard
 
-![Animated GIF of the Dashboard](..\0_Resources\Images\Excel_Data_Analytics_Salary_Project.gif)
+![Animated GIF of the Dashboard](../0_Resources/Images/Excel_Data_Analytics_Salary_Project.gif)
 
 ## Introduction
 
 This dashboard was created to take a look into the world of data job postings and aims at helping workers and job seekers investigate salaries for their current or desired jobs and ensure they are being adequately compensated.
 
-The source of the data are the resources given for the Excel for Data Analytics course created by Luke Barousse and Kelly Adams, which provides foundation in analyzing data using Excel. This data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
+The source of the data are the resources given for the [Excel for Data Analytics course](https://www.youtube.com/watch?v=pCJ15nGFgVg) created by [Luke Barousse](https://github.com/lukebarousse) and [Kelly Adams](https://github.com/kellyjadams), which provides foundation in analyzing data using Excel. This data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
 
 ## Dashboard File
 
@@ -37,9 +37,9 @@ The dataset used for this project contains real-world data science job informati
 
 #### Data Jobs and Schedule Types - Bar Chart
 
-![Bar chart of median yearly salaries by job title](..\0_Resources\Images\salaries_bar_chart.png)
+![Bar chart of median yearly salaries by job title](../0_Resources/Images/salaries_bar_chart.png)
 
-![Bar chart of median yearly salaries by schedule type](..\0_Resources\Images\schedule_type_bar_chart.png)
+![Bar chart of median yearly salaries by schedule type](../0_Resources/Images/schedule_type_bar_chart.png)
 
 For the best visual comparison, horizontal bar charts have been used to visualize the median yearly salaries of data jobs broken down by job titles and schedule types.
 
@@ -49,9 +49,9 @@ This enables quick identification of salary trends, noting that Senior roles and
 
 #### Country Median Salaries - Map Chart
 
-![Animated GIF of a map chart of median yearly salaries](..\0_Resources\Images\map_chart.gif)
+![Animated GIF of a map chart of median yearly salaries](../0_Resources/Images/map_chart.gif)
 
-The map chart feature has been chosen to plot median salaries globally. The color-coded map visually differentiates salary levels across regions each country with available data. This provides an easy and immediate understanding of geographic salary trends and highlights high/low salary regions.
+The map chart feature has been chosen to plot median salaries globally. The color-coded map visually differentiates salary levels across regions, each country with available data. This provides an easy and immediate understanding of geographic salary trends and highlights high/low salary regions.
 
 ### Formulas and Functions
 
@@ -88,11 +88,11 @@ The functions showcased here are taken from my project in their original form, b
 
 **Background table**
 
-![The table that works behind the horizontal bar chart of median salary by titles and the Median Salary KPI card](..\0_Resources\Images\title_background_table.png)
+![The table that works behind the horizontal bar chart of median salary by titles and the Median Salary KPI card](../0_Resources/Images/title_background_table.png)
 
 **Dashboard Implementation**
 
-![The horizontal bar chart of median salary by titles and the Median Salary KPI card](..\0_Resources\Images\title_dashboard.png)
+![The horizontal bar chart of median salary by titles and the Median Salary KPI card](../0_Resources/Images/title_dashboard.png)
 
 #### Count of Job Schedule Type
 
@@ -112,11 +112,11 @@ The functions showcased here are taken from my project in their original form, b
 
 **Background table**
 
-![The table that works behind the horizontal bar chart of median salary by schedule types and the Job Count KPI card](..\0_Resources\Images\type_background_table.png)
+![The table that works behind the horizontal bar chart of median salary by schedule types and the Job Count KPI card](../0_Resources/Images/type_background_table.png)
 
 **Dashboard Implementation**
 
-![The horizontal bar chart of median salary by schedule types and the Job Count KPI card](..\0_Resources\Images\type_dashboard.png)
+![The horizontal bar chart of median salary by schedule types and the Job Count KPI card](../0_Resources/Images/type_dashboard.png)
 
 ### Data Validation
 
