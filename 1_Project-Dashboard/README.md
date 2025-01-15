@@ -124,9 +124,11 @@ The functions showcased here are taken from my project in their original form, b
 
 - Enhanced Data Validation: Implementing the filtered list as a data validation rule under the Job Title, Country, and Type option in the Data tab ensures:
 
-  - User input is restricted to predefined, validated schedule types
+  - User input is restricted to predefined, validated job titles, countries and schedule types
   - Incorrect or inconsistent entries are prevented
   - Overall usability of the dashboard is enhanced
+
+![Animated GIF of the job title selection using data validation](../0_Resources/Images/data_validation.gif)
 
 ## Conclusion
 
