@@ -46,7 +46,8 @@ It includes detailed information on:
 
 #### Transform
 
-- Then, each query was transformed by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
+- Then, each query was transformed by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace. The steps displayed in the following images are Hungarian, but they do what I described before.
+
     - data_jobs_salaries
 
         ![The applied steps of the transformation of the data in the data_jobs_salary query](../0_Resources/Images/data_jobs_salary_steps.png)
