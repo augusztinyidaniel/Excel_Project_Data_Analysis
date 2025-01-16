@@ -139,7 +139,7 @@ SQL and Python seem to dominate as top skills in data-related jobs, reflecting t
   - Secondary Axis: Skill Likelihood (as a Line with Markers)
 - To customize the chart, I added a title, axis title, removed the lines (skill likelihood), and changed the markers to diamonds.
 
-![A combo chart of the median salary and skill likelihood in job postings](../0_Resources/Images/skill_likelihood_and_pay_chart.png)
+![Animated GIF of a combo chart of the median salary and skill likelihood in job postings being filtered using slicers](../0_Resources/Images/Excel_Data_Analytics_Salary_Project_2.gif)
 
 ### Analysis
 
